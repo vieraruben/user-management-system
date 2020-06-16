@@ -23,7 +23,7 @@ class Switch:
   def case_1(self):
       print("Provide information: ")
       name = input("Name: ")
-      salary = int(input("Salary: "))
+      salary = input("Salary: ")
       self.users_db.add_user(name, salary)
 
   def case_2(self):

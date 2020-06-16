@@ -1,6 +1,1 @@
-{
-  "e": {
-    "name": "e",
-    "salary": 1
-  }
-}
+{"e": {"name": "e", "salary": 1}, "r": {"name": "r", "salary": "120"}}
