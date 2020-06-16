@@ -9,10 +9,10 @@
 
 ### Use cases
 
-Show user by name
-Insert a new user
-Remove existing user
-Update existing user
-List all users
-Backup all your current users
-Loads all users backup when loading the app
+Show user by name </br>
+Insert a new user </br>
+Remove existing user </br>
+Update existing user </br>
+List all users </br>
+Backup all your current users </br>
+Loads all users backup when loading the app </br>
