@@ -52,7 +52,7 @@ class Switch:
         print("User db is empty.")
         return
     for user in self.users_db.get_user_list():
-        print(user.getName(), user.getSalary()) 
+        print(f"{user.getName()} - {user.getSalary()}") 
 
   def case_5(self):
     print("Backup user data")
