@@ -8,15 +8,16 @@ class Switch:
     return getattr(self, 'case_' + str(choice), lambda: default)() 
 
   def case_0(self):
-      print("Show user: ")
-      name = input("Name: ")
+      print("Provide user name: ")
+      name = input("")
       user = self.users_db.valid_user(name)
 
       if not user:
         print("User not found")
         return
       
-      print(f"User Name: {user.getName()}  User Salary: {user.getSalary()}")
+      print("Name Salary")
+      print(f"{user.getName()}  {user.getSalary()}")
 
 
   def case_1(self):
@@ -47,12 +48,14 @@ class Switch:
       self.users_db.update_user(name, salary)
 
   def case_4(self):
-    print("User Database")
+    print("List of all users")
     if self.users_db.is_empty():
         print("User db is empty.")
         return
+    print("------------------------------------------")
+    print("Name - Salary")
     for user in self.users_db.get_user_list():
-        print(f"{user.getName()} - {user.getSalary()}") 
+        print(f"{user.getName()}    -   {user.getSalary()}") 
 
   def case_5(self):
     print("Backup user data")
